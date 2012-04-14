@@ -1,0 +1,134 @@
+body {
+    font:.9em Verdana, Tahoma, Arial;
+    margin:0px;
+    padding:0px;
+    background-color:#f5f5f5;
+}
+
+td {
+    padding:4px;
+    padding-left:7px;
+    padding-right:7px;
+    background-color :white;
+}
+
+input {
+    width:30em;
+}
+
+.checkbox {
+    width:2em;
+}
+
+textarea {
+    width:60em;
+    height:28em;
+}
+
+
+select {
+    width:12em;
+}
+
+/* small input */
+.si {
+    width:4em;
+}
+
+.content {
+    margin-top:5px;
+    margin-left:15px;
+}
+
+
+.title td {
+    padding:6px;
+    font:bold .8em Verdana, Tahoma, Arial;
+    background-color:#036;
+    color:white;
+}
+
+.row td {
+    padding:6px;
+    background-color:white;
+    font:.7em Verdana, Tahoma, Arial;
+}
+
+.altrow td {
+    padding:6px;
+    background-color:#F2F2DF;
+    font:.7em Verdana, Tahoma, Arial;
+}
+
+.star {
+    color:red;
+}
+
+.warn {
+    color:red;
+}
+
+/* menu  */
+#navcontainer {
+    border-bottom:1px solid #ccc;
+    width:100%;
+    height:30px;
+    background-color: #ddd;
+}
+
+#navcontainer ul {
+    margin: 0;
+    padding-left:16px;
+    padding-top:4px;
+    list-style-type: none;
+    float:left;
+}
+
+#navcontainer ul li {
+    display: inline;
+}
+
+#navcontainer ul li a {
+    text-decoration: none;
+    color: #000;
+    padding:6px;
+    background-color: transparent;
+    border:0px none;  /*1px solid #ddd; */
+    font:.9em Verdana, Tahoma, Arial;
+}
+
+#navcontainer ul li a:hover {
+    color: #000;
+    border:0px none;  /*1px solid #ddd; */
+    background-color: #f2f2f2;
+    font:.9em Verdana, Tahoma, Arial;
+}
+
+#utimeinfo {
+    text-decoration: none;
+    padding:.2em 1em;
+    color: #000;
+    background-color: transparent;
+    float:right;
+    margin:0px;
+    text-align:right;
+    font:.8em Verdana, Helvetica, Arial;
+}
+
+.pointer {
+    cursor:pointer;
+}
+
+.error {
+    color:red;font-weight:bold;
+}
+
+.success {
+    font:bold 1.2em Verdana, Tahoma, Arial; 
+    color:#222;
+    padding:2px;
+    margin:4px;
+    background-color:#E0E6EF;
+    border-bottom:1px solid #ddd;
+}
+

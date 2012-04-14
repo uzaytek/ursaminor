@@ -1,0 +1,674 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Ursaminor01\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-14 12:28+0300\n"
+"PO-Revision-Date: 2012-04-14 12:51+0200\n"
+"Last-Translator: Aydin Uzun <uzaytek@gmail.com>\n"
+"Language-Team: translation team <translation@uzaytek.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: Ursaminor01\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-13 11:30+0200\n"
+"PO-Revision-Date: 2012-04-14 12:37+0200\n"
+"Last-Translator: Aydin Uzun <uzaytek@gmail.com>\n"
+"Language-Team: translation team <translation@uzaytek.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: init.php:13
+msgid "Theme not found for selected language"
+msgstr "Seçilen dil için tema bulanamadı"
+
+#: admin/theme.php:7
+msgid "Admin Area"
+msgstr "Yönetim Paneli"
+
+#: admin/gallerycat.php:15
+msgid "Category deleted successfuly"
+msgstr "Kategori başarılı bir şekilde silindi"
+
+#: admin/gallerycat.php:43
+msgid "Category modified successfuly"
+msgstr "Kategori başarılı bir şekilde değiştirildi"
+
+#: admin/gallerycat.php:45
+msgid "Database error: Category update failed"
+msgstr "Veritabanı hatası: Kategori güncellemesi yapılamadı"
+
+#: admin/gallerycat.php:50
+msgid "Category saved successfuly"
+msgstr "Kategori başarılı bir şekilde girildi"
+
+#: admin/gallerycat.php:53
+msgid "Database error: Category save failed"
+msgstr "Veritabanı hatası: Kategori girilmesi başarılamadı"
+
+#: admin/gallerycat.php:67
+#: admin/banner.php:64
+#: admin/news.php:65
+#: admin/content.php:65
+#: admin/gallery.php:66
+msgid "Modify"
+msgstr "Değiştir"
+
+#: admin/gallerycat.php:68
+msgid "Translate"
+msgstr "Çevir"
+
+#: admin/gallerycat.php:68
+#: admin/banner.php:65
+#: admin/news.php:66
+#: admin/content.php:66
+#: admin/gallery.php:67
+msgid "Delete"
+msgstr "Sil"
+
+#: admin/gallerycat.php:70
+#: admin/gallery.php:69
+#: includes/UN_GalleryCat.php:57
+#: includes/UN_Gallery.php:74
+#: includes/UN_Gallery.php:76
+msgid "Category"
+msgstr "Kategori"
+
+#: admin/gallerycat.php:75
+msgid "Total Category Count:"
+msgstr "Toplam Kategori Sayısı"
+
+#: admin/globals.php:5
+msgid "Dashboard"
+msgstr "Ana sayfa"
+
+#: admin/globals.php:6
+#: admin/content.php:68
+#: includes/UN_Content.php:64
+msgid "Content"
+msgstr "İçerik"
+
+#: admin/globals.php:7
+#: includes/UN_Theme.php:121
+#: includes/UN_Theme.php:222
+msgid "News"
+msgstr "Haberler"
+
+#: admin/globals.php:8
+msgid "Gallery"
+msgstr "Galeri"
+
+#: admin/globals.php:9
+msgid "Banner"
+msgstr "Reklam"
+
+#: admin/globals.php:10
+#: includes/UN_Settings.php:127
+msgid "Theme"
+msgstr "Tema"
+
+#: admin/globals.php:11
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: admin/globals.php:12
+msgid "Admin"
+msgstr "Yönetici"
+
+#: admin/globals.php:13
+msgid "Logout"
+msgstr "Çıkış"
+
+#: admin/login.php:38
+msgid "Please control your username/password"
+msgstr "Lütfen kullanıcı adı/şifre değerlerini kontrol ediniz"
+
+#: admin/login.php:41
+msgid "Session expired"
+msgstr "Oturum zaman aşımına uğradı"
+
+#: admin/login.php:44
+msgid "Please enter your username/password"
+msgstr "Lütfen kullanıcı adı/şifre bilgilerinizi giriniz"
+
+#: admin/login.php:51
+#: includes/UN_Admin.php:159
+msgid "Username"
+msgstr "Kullanıcı adı"
+
+#: admin/login.php:59
+msgid "Login"
+msgstr "Giriş"
+
+#: admin/settings.php:5
+msgid "Manage Languages"
+msgstr "Çevirileri Yönet"
+
+#: admin/settings.php:19
+#: admin/settings_flymake.php:19
+msgid "Menu order updated successfuly"
+msgstr "Menu sıralamsı başarılı bir şekilde kaydedildi"
+
+#: admin/settings.php:21
+#: admin/settings_flymake.php:21
+msgid "Database error: menu order update failed"
+msgstr "Veritabanı hatası: Menu sıralaması güncellemesi yapılamadı"
+
+#: admin/settings.php:39
+msgid "Default language updated successfuly"
+msgstr "Varsayılan dil başarılı bir şekilde güncellendi"
+
+#: admin/settings.php:41
+msgid "Database error: default language update failed"
+msgstr "Veritabanı hatası: varsayılan dil güncellemesi yapılamadı"
+
+#: admin/banner.php:16
+#: admin/gallery.php:15
+msgid "File deleted successfuly"
+msgstr "Dosya başarılı bir şekilde silindi"
+
+#: admin/banner.php:43
+msgid "Banner modified successfuly"
+msgstr "Reklam başarılı bir şekilde değiştirildi"
+
+#: admin/banner.php:45
+msgid "Database error: banner update failed"
+msgstr "Veritabanı hatası: reklam güncellemesi yapılamadı"
+
+#: admin/banner.php:50
+msgid "Banner inserted successfuly"
+msgstr "Reklam başarılı bir şekilde girildi"
+
+#: admin/banner.php:53
+msgid "Database error: banner insert failed"
+msgstr "Veritabanı hatası: reklam bilgileri girilemedi"
+
+#: admin/banner.php:67
+#: admin/gallery.php:69
+msgid "Name"
+msgstr "Adı"
+
+#: admin/banner.php:67
+msgid "Location"
+msgstr "Konum"
+
+#: admin/banner.php:67
+#: includes/UN_Banner.php:71
+msgid "Url"
+msgstr "Web Adresi"
+
+#: admin/banner.php:67
+#: admin/gallery.php:69
+msgid "Upload Date"
+msgstr "Yükleme Tarihi"
+
+#: admin/banner.php:73
+#: admin/gallery.php:76
+msgid "Total File Count:"
+msgstr "Toplam Dosya Sayısı"
+
+#: admin/languages.php:14
+msgid "Language deleted successfuly"
+msgstr "Dil başarılı bir şekilde silindi"
+
+#: admin/languages.php:42
+msgid "Language modified successfuly"
+msgstr "Dil başarılı bir şekilde güncellendi"
+
+#: admin/languages.php:44
+msgid "Database error: language update failed"
+msgstr "Veritabanı hatası: dil güncellemesi yapılamadı"
+
+#: admin/languages.php:49
+msgid "Language inserted successfuly"
+msgstr "Dil başarılı bir şekilde kaydedildi"
+
+#: admin/languages.php:52
+msgid "Database error: language insert failed"
+msgstr "Veritabanı hatası: dil kaydı yapılamadı"
+
+#: admin/languages.php:68
+msgid "Language Code"
+msgstr "Dil Kodu"
+
+#: admin/languages.php:68
+#: includes/UN_Language.php:65
+msgid "Language Text"
+msgstr "Dil Metni"
+
+#: admin/languages.php:74
+msgid "Total Language Count:"
+msgstr "Toplam Dil Sayısı"
+
+#: admin/logout.php:12
+msgid "Session closed successfuly"
+msgstr "Oturum başarılı bir şekilde kapatıldı"
+
+#: admin/logout.php:15
+msgid "Session close failed"
+msgstr "Oturum kapatılması yapılamadı"
+
+#: admin/view.php:13
+#: admin/delete.php:14
+msgid "Logo file not found or permission denied from filesytem"
+msgstr "Logo dosyası bulunamadı veya sistemde dosya okuma yetkiniz yok"
+
+#: admin/news.php:14
+msgid "News deleted successfuly"
+msgstr "Haber başarılı bir şekilde silindi"
+
+#: admin/news.php:42
+msgid "News modified successfuly"
+msgstr "Haber başarılı bir şekilde değiştirildi"
+
+#: admin/news.php:44
+msgid "Database error: news update failed"
+msgstr "Veritabanı hatası: haber güncellemesi yapılamadı"
+
+#: admin/news.php:49
+msgid "News inserted successfuly"
+msgstr "Haber başarılı bir şekilde girildi"
+
+#: admin/news.php:52
+msgid "Database error: news insert failed"
+msgstr "Veritabanı hatası: haber girişi yapılamadı"
+
+#: admin/news.php:68
+#: includes/UN_News.php:57
+msgid "News Title"
+msgstr "Haber Başlığı"
+
+#: admin/news.php:68
+#: includes/UN_News.php:60
+msgid "News Content"
+msgstr "Haber İçeriği"
+
+#: admin/news.php:68
+#: admin/content.php:67
+#: includes/UN_News.php:72
+#: includes/UN_Content.php:75
+msgid "Language"
+msgstr "Dil"
+
+#: admin/news.php:74
+msgid "Total News Count:"
+msgstr "Toplam Haber Sayısı"
+
+#: admin/translate.php:37
+msgid "Translations inserted successfuly"
+msgstr "Çeviri başarılı bir şekilde kaydedildi"
+
+#: admin/translate.php:39
+msgid "Database error: translations insert failed"
+msgstr "Veritabanı hatası: çeviri kaydı yapılamadı"
+
+#: admin/delete.php:12
+msgid "Logo file deleted successfully"
+msgstr "Logo dosyası başarılı bir şekilde silindi"
+
+#: admin/settings-theme.php:22
+msgid "Settings updated successfuly"
+msgstr "Ayarlar başarılı bir şekilde güncellendi"
+
+#: admin/settings-theme.php:24
+msgid "Database error: settings update failed"
+msgstr "Veritabanı hatası: ayarların güncellemesi yapılamadı"
+
+#: admin/settings-theme.php:29
+msgid "Settings inserted successfuly"
+msgstr "Ayarlar başarılı bir şekilde girildi"
+
+#: admin/settings-theme.php:31
+msgid "Database error: settings insert failed"
+msgstr "Veritabanı hatası: ayar girişi yapılamadı"
+
+#: admin/content.php:14
+msgid "Content deleted successfuly"
+msgstr "İçerik başarılı bir şekilde silindi"
+
+#: admin/content.php:42
+msgid "Content modified successfuly"
+msgstr "İçerik güncellemesi başarılı bir şekilde yapıldı"
+
+#: admin/content.php:44
+msgid "Database error: content update failed"
+msgstr "İçerik güncellemesi yapılamadı"
+
+#: admin/content.php:49
+msgid "Content saved successfuly"
+msgstr "İçerik başarılı bir şekilde saklandı"
+
+#: admin/content.php:52
+msgid "Database error: content save faield"
+msgstr "Veritabanı hatası: içerik girişi yapılamadı"
+
+#: admin/content.php:68
+#: includes/UN_Content.php:57
+msgid "Title"
+msgstr "Başlık"
+
+#: admin/content.php:73
+msgid "Total Page Count:"
+msgstr "Toplam Sayfa Sayısı"
+
+#: admin/myinfo.php:25
+msgid "Your informations updated successfuly"
+msgstr "Bilgilerini başarılı bir şekilde güncellendi"
+
+#: admin/myinfo.php:32
+msgid "Session expried, please login and try again"
+msgstr "Oturum sonlandı, lütfen tekrar giriş yapın"
+
+#: admin/gallery.php:34
+msgid "Manage Categories"
+msgstr "Kategorileri düzenle"
+
+#: admin/gallery.php:45
+msgid "Gallery modified successfuly"
+msgstr "Galeri başarılı bir şekilde güncellendi"
+
+#: admin/gallery.php:47
+msgid "Database error: gallery update failed"
+msgstr "Veritabanı hatası: galeri güncellemesi yapılamadı"
+
+#: admin/gallery.php:52
+msgid "Gallery inserted successfuly"
+msgstr "Galeri başarılı bir şekilde girildi"
+
+#: admin/gallery.php:55
+msgid "Database error: gallery insert failed"
+msgstr "Veritabanı hatası: galeri girişi yapılamadı"
+
+#: includes/UN_SelectForm.php:38
+msgid "Select"
+msgstr "Seçim"
+
+#: includes/UN_SelectForm.php:49
+msgid "Go"
+msgstr "Git"
+
+#: includes/UN_Theme.php:84
+msgid "Last Picture"
+msgstr "Son Fotoğraf"
+
+#: includes/UN_Theme.php:89
+msgid "All Gallery"
+msgstr "Galeriler"
+
+#: includes/UN_Theme.php:127
+msgid "All News"
+msgstr "Haberler"
+
+#: includes/UN_Theme.php:247
+msgid "Main Page"
+msgstr "Ana Sayfa"
+
+#: includes/UN_Translate.php:148
+msgid "Translate:"
+msgstr "Çeviri:"
+
+#: includes/UN_Banner.php:74
+#: includes/UN_GalleryCat.php:60
+#: includes/UN_News.php:64
+#: includes/UN_Gallery.php:81
+#: includes/UN_Content.php:69
+#: includes/UN_Content.php:81
+#: includes/UN_Admin.php:166
+msgid "Save"
+msgstr "Kaydet"
+
+#: includes/UN_Banner.php:59
+#: includes/UN_Gallery.php:61
+msgid "File"
+msgstr "Dosya"
+
+#: includes/UN_Banner.php:61
+#: includes/UN_Settings.php:131
+#: includes/UN_Gallery.php:63
+#, php-format
+msgid "Maximum file size is: %d KB"
+msgstr "Maksimum dosya boyutu: %d KB"
+
+#: includes/UN_Banner.php:63
+#: includes/UN_Settings.php:133
+#: includes/UN_Gallery.php:65
+msgid "File extension required in types:"
+msgstr "Dosya uzantısı şu tiplerde olmalıdır:"
+
+#: includes/UN_Banner.php:69
+msgid "Banner Location"
+msgstr "Reklam konumu"
+
+#: includes/UN_Banner.php:72
+msgid "Url must be filled!"
+msgstr "Web adresi doldurulmalıdır"
+
+#: includes/UN_Banner.php:84
+msgid "top banner (max 468 x 60)"
+msgstr "üst reklam (maksimum 468 x 60)"
+
+#: includes/UN_Banner.php:85
+msgid "left banner (max 180 x 150)"
+msgstr "sol reklam (maksimum 180 x 150)"
+
+#: includes/UN_Banner.php:86
+msgid "right banner (max 160 x 600)"
+msgstr "sağ reklam (maksimum 160 x 600)"
+
+#: includes/UN_Banner.php:114
+msgid "Upload error: banner upload failed"
+msgstr "Yükleme hatası: reklam yüklemesi yapılamadı"
+
+#: includes/UN_GalleryCat.php:58
+msgid "Category must be filled"
+msgstr "Kategori doldurulmalıdır"
+
+#: includes/UN_Dao.php:252
+msgid "Undefined Class Property: "
+msgstr "Tanımsız Sınıf Özelliği"
+
+#: includes/UN_News.php:58
+msgid "News title must be filled!"
+msgstr "Haber başlığı doldurulmalıdır"
+
+#: includes/UN_News.php:62
+msgid "News content must be filled!"
+msgstr "Haber içeriği doldurulmalıdır"
+
+#: includes/UN_Settings.php:116
+msgid "Site Name"
+msgstr "Site Adı"
+
+#: includes/UN_Settings.php:118
+msgid "Site Title"
+msgstr "Site Başlığı"
+
+#: includes/UN_Settings.php:120
+msgid "Keywords"
+msgstr "Anahtar Sözcükler (Meta Keywords)"
+
+#: includes/UN_Settings.php:122
+msgid "Description"
+msgstr "Site Açıklaması (Meta Description)"
+
+#: includes/UN_Settings.php:124
+msgid "Slogan Text"
+msgstr "Slogan metni"
+
+#: includes/UN_Settings.php:129
+msgid "Logo"
+msgstr "Logo"
+
+#: includes/UN_Settings.php:138
+msgid "Welcome Content"
+msgstr "Anasayfa İçeriği"
+
+#: includes/UN_Settings.php:142
+msgid "Address"
+msgstr "Adres"
+
+#: includes/UN_Settings.php:144
+msgid "Show main page link in the web site main menu"
+msgstr "Menüde ana sayfa linkini göster"
+
+#: includes/UN_Settings.php:179
+msgid "Upload error: logo upload failed"
+msgstr "Yükleme hatası: logo yüklemesi yapılamadı"
+
+#: includes/UN_QuickForm.php:54
+msgid "required fields"
+msgstr "gerekli alanlar"
+
+#: includes/UN_QuickForm.php:55
+msgid "Please correct all errors and try again!"
+msgstr "Lütfen hataları düzeltip tekrar deneyin"
+
+#: includes/UN_QuickForm.php:134
+msgid "Calendar..."
+msgstr "Takvim..."
+
+#: includes/UN_QuickForm.php:271
+msgid "Up"
+msgstr "Yukarı"
+
+#: includes/UN_QuickForm.php:273
+msgid "Down"
+msgstr "Aşağı"
+
+#: includes/UN_QuickForm.php:360
+msgid "Please seperate tags by comma"
+msgstr "Etiketleri vigül ile birbirinden ayırın"
+
+#: includes/UN_Gallery.php:76
+msgid "Please create gallery category!"
+msgstr "Lütfen galeri kategorisi oluşturun"
+
+#: includes/UN_Gallery.php:78
+msgid "Gallery category is a required field"
+msgstr "Galeri kategorisi gerekli bir alandır"
+
+#: includes/UN_Gallery.php:111
+msgid "Upload error: Image upload failed"
+msgstr "Yükleme hatası: Fotoğraf yüklemesi yapılamadı"
+
+#: includes/UN_Thumbnail.php:62
+#, php-format
+msgid "%s image file unsupported"
+msgstr "%s fotoğraf dosyası (uzantısı) desteklenmiyor"
+
+#: includes/UN_Content.php:58
+msgid "Title must be filled"
+msgstr "Başlık zorunlu bir alandır"
+
+#: includes/UN_Content.php:60
+msgid "Show in the web site menu"
+msgstr "Web sitesi menüsünde göster"
+
+#: includes/UN_Content.php:66
+msgid "Content must be filled!"
+msgstr "İçerik alanı zorunlu bir alandır"
+
+#: includes/UN_Content.php:77
+msgid "Link"
+msgstr "Bağlantı"
+
+#: includes/UN_Content.php:78
+msgid "If you add a url, content will be displayed as link title"
+msgstr "Eğer adres bilgisi girerseniz, içerik link başlığı olarak gösterilecektir"
+
+#: includes/UN_Content.php:79
+msgid "Menu Order"
+msgstr "Menu sıralaması"
+
+#: includes/UN_Admin.php:161
+msgid "E-mail"
+msgstr "Eposta"
+
+#: includes/UN_Admin.php:162
+msgid "E-mail address regular expression failed"
+msgstr "Eposta adresi geçerli bir biçimde doldurulmalıdır"
+
+#: includes/UN_Admin.php:164
+msgid "Password"
+msgstr "Şifre"
+
+#: includes/UN_Language.php:57
+msgid "Language Code(s)"
+msgstr "Dil Kod(u/ları)"
+
+#: includes/UN_Language.php:59
+msgid "Language code must be available in your system, please see help documents"
+msgstr "Dil kodu sistem tarafından desteklenmelidir, lütfen yardım dokümanlarına bakınız"
+
+#: includes/UN_Language.php:60
+msgid "Language code must be filled!"
+msgstr "Dil kodu doldurulmalıdır!"
+
+#: includes/UN_Language.php:62
+msgid "Language Flag"
+msgstr "Dil Bayrağı (Tema)"
+
+#: includes/UN_Language.php:63
+msgid "Maximum flag value 10 characters"
+msgstr "Maksimum bayrak metni uzunluğu 10 karakterdir."
+
+#: includes/UN_Language.php:66
+msgid "Language text must be filled!"
+msgstr "Dil metni doldurulmalıdır"
+
+#: includes/UN_Language.php:87
+msgid "Select Language"
+msgstr "Dil Seçin"
+
+#: includes/UN_Language.php:108
+msgid "Default Language"
+msgstr "Varsayılan Dil"
+
+#: contact.php:8
+msgid "Name required"
+msgstr "İsim gereklidir"
+
+#: contact.php:11
+msgid "E-mail required"
+msgstr "Eposta gereklidir"
+
+#: contact.php:12
+msgid "Please check email, e-mail is not a valid e-mail address"
+msgstr "Lütfen eposta adresini kontrol edin, geçerli gözükmüyor"
+
+#: contact.php:14
+msgid "Subject"
+msgstr "Konu"
+
+#: contact.php:15
+msgid "Subject required"
+msgstr "Konu gereklidir"
+
+#: contact.php:17
+msgid "Message"
+msgstr "Mesaj"
+
+#: contact.php:18
+msgid "Message required"
+msgstr "Mesaj gereklidir"
+
+#: contact.php:20
+msgid "Send"
+msgstr "Gönder"
+
+#: contact.php:29
+msgid "Your contact request has been successfully submitted"
+msgstr "İletişim bilgileriniz başarılı bir şekilde gönderildi"
+
+#: contact.php:31
+msgid "Something wrong, mail function failed."
+msgstr "Hata, mail işlevi çalışmıyor."
+
