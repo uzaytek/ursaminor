@@ -10,7 +10,7 @@ $_menu_arr = array(
                    array('content.php',   _('Content')),
                    array('news.php',      _('News')),
                    array('gallery.php',   _('Gallery')),
-                   array('advert.php',    _('Banner')),
+                   array('advert-file.php',    _('Banner')),
                    array('settings-theme.php',  _('Theme')),
                    array('settings.php',  _('Settings')),
                    array('myinfo.php',    _('Admin')),

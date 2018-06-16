@@ -20,7 +20,8 @@ class UN_Language extends UN_Dao
    */  
   public function __construct() {
     parent::__construct(array('table'=> DB_TBL_LANGS, 'pk'=>'langid','seq'=>'_nid_seq'),
-                        array('langid','langcode','langflag','langtext','isdefault','isdeleted','dtcreated')
+                        array('langid','langcode','browsercodes',
+                              'langflag','langtext','isdefault','isdeleted','dtcreated')
                         );
   }
   
@@ -58,6 +59,9 @@ class UN_Language extends UN_Dao
     $this->form->setAddNoteTemplate('langcode',
                                     _('Language code must be available in your system, please see help documents'), true); 
     $this->form->addRule('langcode', _('Language code must be filled!'), 'required', null, 'client');
+
+    $this->form->addElement('text', 'browsercodes', _('Browser Code(s)'));
+    $this->form->addRule('browsercodes', _('Browser codes must be filled!'), 'required', null,  'client');
 
     $this->form->addElement('text', 'langflag', _('Language Flag'),'maxlength="10"'); 
     $this->form->addRule('langflag', _('Maximum flag value 10 characters'), 'maxlength', 10, 'client');
@@ -110,31 +114,29 @@ class UN_Language extends UN_Dao
   }
 
   /**
-   * Return all countr(y/ies) as array first element
+   * Return language table fields according to parameter
    * 
-   * If parameter country > 0 return country information as array
-   * otherwise return all country information, Second element is 
-   * default country id for select box selected
-   *
-   * @param integer $country
-   * @return array(all data, default country id)
+   * @param string $field Desired table field name
+   * @return array(all language data, default language id)
    */
-  public function getLangTexts() {
+  public function getLangTexts($field = 'langtext') {
     $this->setWhere('(isdeleted=0 OR isdeleted IS NULL)');
     $rows = parent::getAll();
     $out = array();
     if (is_array($rows)) {      
       foreach($rows as $row) {
-        $out[$row['langid']] = $row['langtext'];
+        if (isset($row[$field])) {
+          $out[$row['langid']] = $row[$field];
+        } else {
+          throw new Exception(_('Field not found in the language rows'));
+        }
         if ($row['isdefault'] > 0) {
           $default = $row['langid']; // default lang id
         }
       }
     }
     return array($out,$default);
-  }  
-
-
+  }
 
   /**
    * Insert values to db
@@ -153,9 +155,10 @@ class UN_Language extends UN_Dao
    * @param array $values The form values filled by panel user
    */  
   public function setValues(&$values) {
-    $this->langcode   = filter_var($values['langcode']);
-    $this->langtext   = filter_var($values['langtext']);
-    $this->langflag   = filter_var($values['langflag']);
+    $this->langcode     = filter_var($values['langcode']);
+    $this->browsercodes = UN_Filter($values['browsercodes']);
+    $this->langtext     = filter_var($values['langtext']);
+    $this->langflag     = filter_var($values['langflag']);
   }
 
 }

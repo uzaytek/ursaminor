@@ -65,10 +65,10 @@ if ($res) {
   $inline_form = new UN_SelectForm(array('languages.php'                =>_('Modify'), 
                                          'languages.php#delete_lang'    =>_('Delete')));
   $t = new UN_Table($inline_form);
-  $t->title(array(_('Language Code'), _('Language Text')));
+  $t->title(array(_('Language Code'), _('Browser Codes'), _('Language Text')));
   
   while($row = $res->fetch()) {
-    $t->tr(array($row['langcode'], truncate(clearCodes($row['langtext']))),
+    $t->tr(array($row['langcode'], $row['browsercodes'], truncate(clearCodes($row['langtext']))),
            $row['langid']);
   }
   $t->addRow($pager->display()._('Total Language Count:') . $numrows);

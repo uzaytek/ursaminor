@@ -180,7 +180,7 @@ class UN_Dao {
   protected static $db = false;
 
   /**
-   * Boolean shows queries have to be in a transsaction
+   * Boolean shows queries have to be in a transaction
    *
    * @var boolean
    * @see beginTransaction, commitTransaction functions
@@ -287,7 +287,7 @@ class UN_Dao {
    * @param integer $numrows The row count of the table
    * @param array $pagerOptions Pager options
    * @param string $where Add to query if exists
-   * return boolean true if successfuly paginate
+   * return boolean true if successfully paginate
    */  
   public function pager(&$pager, &$numrows, $pagerOptions=null, $where=null) {
     
@@ -307,13 +307,13 @@ class UN_Dao {
    * @param object $pager Pagination object 
    * @param integer $numrows table numrows
    * @param array $pagerOptions Pager options
-   * @param string $query where we paginatate
+   * @param string $query where we paginate
    * @return boolean True if success otherwise false
    */
   public function _pager(&$pager, &$numrows, $pagerOptions, $query) {
     if(!self::$db) $this->connect();
     
-    // query for $numrows, i.e. dont select all rows just count(*) numrows
+    // query for $numrows, i.e. don't select all rows just count(*) numrows
     $pos_from = strpos($query, 'FROM');
     if (!$pos_from) {
       return false;

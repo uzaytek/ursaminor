@@ -36,7 +36,7 @@ class UN_SelectForm {
     $form = new UN_QuickForm('inline_'.$row_id);
 
     $form->addElement('select', 'go', null, array(_('Select'))+$this->arrSelect,
-                      array('onchange'=>'changeaction(this.form,this.value)'));
+                      array('onblur'=>'changeaction(this.form,this.value)'));
     $form->setInlineTemplate('go');
     
     // row id and 

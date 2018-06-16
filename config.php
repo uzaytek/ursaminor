@@ -10,7 +10,7 @@ if(!defined('ENVIRONMENT')) {
 
 
 /* ---[ PROJECT ]------------------------------- */
-define('UN_VERSION',         '0.1');
+define('UN_VERSION',         '0.2');
 define('UN_PROJECT_NAME',    'Ursaminor');
 define('UN_SESSION_NAME',    'Ursaminor');
 
@@ -79,6 +79,18 @@ $session =& UN_Session::instance();
 
 $langid = (isset($_REQUEST['langid'])) ? intval($_REQUEST['langid']) : 0;
 $lang = new UN_Language;
+
+$default = getDefaultLanguage(); // from browser
+list($aLanguages, $defaultLanguage) = $lang->getLangTexts('browsercodes'); 
+if ($langid == 0) {
+  $langid = array_find($default, $aLanguages);
+  if ($langid > 0) {
+    $_REQUEST['langid'] = $langid;
+  } else {
+    $langid = $defaultLanguage;
+  }
+}
+
 $lang->load($langid);
 
 putenv("LANGUAGE=".$lang->langcode);

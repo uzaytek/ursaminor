@@ -7,6 +7,7 @@
 <title><?php theme_title(); ?></title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="<?php theme_path();?>style.css" />
+<script src="<?php echo LC_SITE;?>assets/javascripts.js"></script>
 </head>
 <body>
 <div id="container">
@@ -23,6 +24,7 @@
 	</div>
 	<div id="content-container">
 		<div id="section-navigation">
+   <p><a href="admin/">Admin Panel</a></p>
    <?php theme_news_box();?>
    <?php theme_gallery_box();?>
    <?php theme_banner('left'); ?>

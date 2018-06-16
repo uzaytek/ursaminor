@@ -1,6 +1,78 @@
 <?php
 
 /**
+ * array_search with partial matches and optional search by key
+ *
+ */
+function array_find($needle, $haystack, $search_keys = false) {
+  if(!is_array($haystack)) return false;
+  foreach($haystack as $key=>$value) {
+    $what = ($search_keys) ? $key : $value;
+    if(strpos($what, $needle)!==false) return $key;
+  }
+  return false;
+}
+   
+/**
+ * array_search with recursive searching, optional partial matches and optional search by key
+ *
+ */
+function array_find_r($needle, $haystack, $partial_matches = false, $search_keys = false) {
+  if(!is_array($haystack)) return false;
+  foreach($haystack as $key=>$value) {
+    $what = ($search_keys) ? $key : $value;
+    if($needle===$what) return $key;
+    else if($partial_matches && @strpos($what, $needle)!==false) return $key;
+    else if(is_array($value) && array_find_r($needle, $value, $partial_matches, $search_keys)!==false) return $key;
+  }
+  return false;
+}
+
+/**
+ * get default language, comes from php manual
+ *
+ * Copyright © 2008 Darrin Yeager                        
+ * http://www.dyeager.org/                               
+ * Licensed under BSD license.                           
+ * http://www.dyeager.org/downloads/license-bsd.php    
+ */
+function getDefaultLanguage() {
+  if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"])) {
+      return parseDefaultLanguage($_SERVER["HTTP_ACCEPT_LANGUAGE"]);
+  } else {
+      return parseDefaultLanguage(NULL);
+  }
+}
+
+/**
+ * Parse default language, comes from php manual
+ *
+ */
+function parseDefaultLanguage($http_accept, $deflang = "en") {
+   if(isset($http_accept) && strlen($http_accept) > 1)  {
+      # Split possible languages into array
+      $x = explode(",",$http_accept);
+      foreach ($x as $val) {
+         #check for q-value and create associative array. No q-value means 1 by rule
+         if(preg_match("/(.*);q=([0-1]{0,1}\.\d{0,4})/i",$val,$matches))
+            $lang[$matches[1]] = (float)$matches[2];
+         else
+            $lang[$val] = 1.0;
+      }
+
+      #return default language (highest q-value)
+      $qval = 0.0;
+      foreach ($lang as $key => $value) {
+         if ($value > $qval) {
+            $qval = (float)$value;
+            $deflang = $key;
+         }
+      }
+   }
+   return strtolower($deflang);
+}
+
+/**
  * Return version info for meta tag
  *
  */
@@ -64,7 +136,7 @@ function url($url, $title=null) {
 function print_menu() {
   $menu = $GLOBALS['_menu_arr'];
 
-  echo "<div id='navcontainer'><ul>";
+  echo '<div id="navcontainer"><ul><li><a href="../index.php" alt="home" target="_blank"><img src="images/home.png" border="0" hspace="10" /></a></li>';
   if (is_array($menu)) {
     foreach($menu as $menu_id => $sub_menu){
       echo "<li><a href='".$sub_menu[0]."'>".$sub_menu[1]."</a></li>";
@@ -74,8 +146,8 @@ function print_menu() {
   $session = UN_Session::instance();
   $auth = $session->get('auth');
 
-  echo "<p id='utimeinfo'>".$auth['adminname']."</p>";	
-  echo "</div><br clear='both'>";
+  echo '<p id="utimeinfo">'.$auth['adminname'].'</p>';	
+  echo '</div><br clear="both">';
 }
 
 /**
