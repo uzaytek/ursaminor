@@ -28,7 +28,7 @@ class UN_Say
    * @return array messages
    */	
   private static function getAll() {
-    $session =& UN_Session::instance();
+    $session = UN_Session::instance();
     if ($session->ifset('aMessages')) {
       return $session->get('aMessages');
     }
@@ -40,7 +40,7 @@ class UN_Say
    * @return void
    */	
   private static function shutUP() {
-    $session =& UN_Session::instance();
+    $session = UN_Session::instance();
     $session->clear('aMessages');
   }
   
