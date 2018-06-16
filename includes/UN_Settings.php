@@ -37,7 +37,7 @@ class UN_Settings extends UN_Dao
       if(!self::$db) $this->connect();
       $result = self::$db->query("SELECT * FROM ".DB_TBL_GLOBALS." WHERE langid=".(int)$langid.
                                  " AND tag='settings' AND tagproperty='theme'");
-      $row =& $result->fetch(PDO::FETCH_ASSOC); 
+      $row = $result->fetch(PDO::FETCH_ASSOC); 
       $this->langid = (int)$langid;
     } catch (PDOException $e) {
       $this->fatal_error($e->getMessage());
@@ -61,7 +61,7 @@ class UN_Settings extends UN_Dao
    * Insert values to db
    *
    */  
-  public function insert() {
+  public function insert(&$insertid=0) {
     try {
       if(!self::$db) $this->connect();
       $defaults = $this->defaults();
@@ -81,7 +81,7 @@ class UN_Settings extends UN_Dao
    * Update values
    *
    */  
-  public function update() {
+  public function update($theid) {
     try {
       if(!self::$db) $this->connect();
       $defaults = $this->defaults();
