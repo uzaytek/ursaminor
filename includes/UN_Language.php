@@ -143,7 +143,7 @@ class UN_Language extends UN_Dao
    *
    * @param integer $theid The database row id 
    */  
-  public function insert(&$theid) {
+  public function insert(&$theid=0) {
     $this->dtcreated  = $this->getDate('il');
     $this->isdeleted  = 0;
     return parent::insert($theid);
