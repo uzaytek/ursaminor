@@ -149,6 +149,7 @@ INSERT INTO `globals` (`globalid`, `langid`, `tag`, `tagproperty`, `tagvalue`) V
 CREATE TABLE IF NOT EXISTS `languages` (
   `langid` int(9) unsigned NOT NULL AUTO_INCREMENT,
   `langcode` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `browsercodes` VARCHAR(10) COLLATE utf8_unicode_ci NOT NULL;  
   `langflag` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
   `langtext` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `isdefault` tinyint(4) NOT NULL,
