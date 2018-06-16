@@ -73,7 +73,7 @@ require_once PT_INCLUDE . 'UN_Theme.php';
 
 /* ---[ SESSION ]------------------------------- */
 
-$session =& UN_Session::instance();
+$session = UN_Session::instance();
 
 /* ---[ LANGUAGE ]------------------------------- */
 
