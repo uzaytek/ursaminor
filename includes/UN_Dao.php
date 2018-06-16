@@ -52,8 +52,8 @@ class LoggedPDO extends PDO
   /**
    * @return LoggedPDOStatement
    */
-  public function prepare($query) {
-    return new LoggedPDOStatement(parent::prepare($query));
+  public function prepare($query, $options = NULL) {
+    return new LoggedPDOStatement(parent::prepare($query), $options);
   }
   
   /**
@@ -265,7 +265,7 @@ class UN_Dao {
       if(!self::$db) $this->connect();
       $this->setWhere($this->reg['pk'] .'='. (int)$theid, ' AND ');
       $result = self::$db->query('SELECT * FROM '. $this->reg['table'] . $this->where());
-      $row =& $result->fetch(PDO::FETCH_ASSOC); 
+      $row = $result->fetch(PDO::FETCH_ASSOC); 
     } catch (PDOException $e) {
       $this->fatal_error($e->getMessage());
     }
@@ -347,7 +347,7 @@ class UN_Dao {
     try {
       if(!self::$db) $this->connect();
       $result = self::$db->query('SELECT * FROM '. $this->reg['table'] . $this->where() . $this->orderby());
-      $rows =& $result->fetchAll(PDO::FETCH_ASSOC); 
+      $rows = $result->fetchAll(PDO::FETCH_ASSOC); 
     } catch (PDOException $e) {
       $this->fatal_error($e->getMessage());
     }
